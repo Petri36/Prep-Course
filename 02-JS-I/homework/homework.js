@@ -71,8 +71,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código: 
-  if str.lenght === str2.lenght
-  return true;}
+  if str.lenght === str2.lenght {
+    return true;}
   else { 
     return false;
   }
@@ -84,7 +84,7 @@ function menosQueNoventa(num) {
   if(num < 90)
   return true;
 } 
-else { 
+ else { 
   return false;
 }
 
@@ -169,13 +169,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(num > 0) {
+  if(numero > 0) {
     return "es positivo";
   }
-  else if (num < 0) {
+  else if (numero < 0) {
   return "es negativo"
 }
-  else {( num === 0)
+  else {(numero === 0)
   return false;
 } 
 
@@ -245,7 +245,7 @@ function esVocal(letra){
   return "Dato incorrecto"
 }
 
-hola que talll
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -284,4 +284,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+}
