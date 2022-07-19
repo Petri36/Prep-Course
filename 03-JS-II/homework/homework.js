@@ -18,9 +18,10 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   if(edad >= 18){
     return "Allowed";
-} else {
-  return "Not Allowed"
-}
+  } 
+  else {
+    return "Not Allowed"
+  }
 }
   
 function conection(status) {
@@ -47,13 +48,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if(idioma === "aleman") {
-    return "Guten Tag!"
+    return "Guten Tag!";
   } else if(idiona === "mandarin") {
       return "Ni Hao!";
   } else if(idioma === "ingles") {
       return "Hello!";
   } else {
-      return "Hola!"
+      return "Hola!";
   }
 }
 
@@ -83,11 +84,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero === 10 || 5){
-    return true;
-  } else {
-    return false;
-  }
+  return numero === 10 || numero === 5;
 }
 
 function estaEnRango(numero) {
@@ -113,15 +110,10 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero % 3){
-    return "flizz"
-  } else if(numero % 5){
-    return "buzz";
-  } else if(numero % 15){
-    return "fizzbuzz";
-  } else {
-    return numero;
-  }
+  if(numero % 3) return "flizz";
+  if(numero % 5) return "buzz";
+  if(numero % 15) return "fizzbuzz";
+  return numero;
 }
 
 function operadoresLogicos(num1, num2, num3) {
