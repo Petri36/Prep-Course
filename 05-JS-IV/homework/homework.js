@@ -37,7 +37,7 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  var ojbMisterioso = {
+  var objetoMisterioso = {
   numeroMisterioso: 4
   }
   var result = objetoMisterioso.numeroMisterioso * 5;
@@ -169,7 +169,7 @@ function agregarMetodoCalculoDescuento (producto) {
   precio: 20,
   porcentajeDeDescuento: .2,
   calcularPrecioDescuento:
-  };
+};
   producto.calcularPrecioDescuento = function() {
     return this.precio - ( this.precio * this.porcentajeDeDescuento );
   };
