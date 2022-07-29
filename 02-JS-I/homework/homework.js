@@ -80,8 +80,7 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num < 90)
-  return true;
-} else { 
+  return true; 
   return false;
 }
 
