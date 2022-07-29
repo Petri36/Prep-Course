@@ -146,7 +146,7 @@ function diaDeLaSemana(numeroDeDia) {
     return "Es fin de semana"
   }
   else {
-    return "Es dia laboral"
+    return "Es dia Laboral"
   }
 } 
 
@@ -155,12 +155,11 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var numero = 0;
-  if(numero >= 9){
-    return false;
-  } else {
-    return true;
+  let num = n.toString()
+  if(num.charAt(0) === "9"){
+    return true
   }
+  return false
 }
 
 
