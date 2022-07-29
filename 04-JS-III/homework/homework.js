@@ -30,6 +30,7 @@ function incrementarPorUno(array) {
   for(var i = 0; i < array.length; i++) {
     nuevoArray[i] = array[i] + 1;
   }
+  return nuevoArray;
 }
 
 
@@ -66,13 +67,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for(var i = 0; i < array.length; i++){
-    if(array[i] === elemento){
+  for(var i = 0; i < array.length; i++) {
+    if(array[i] === elemento) {
       return true;
-      }
-        return false;
-        }
+    }
+  }
+  return false;
 }
+
 
 
 function agregarNumeros(numeros) {
@@ -100,12 +102,12 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
   var maximo = numeros[0];
-  for(var i = 0; i < numeros.length; i++){
-    if(numeros[i] < maximo){
-    maximo = numeros[i]
+  for(var i = 1; i < numeros.length; i++) {
+    if(numeros[i] > maximo) { 
+      maximo = numeros[i];
+    }
   }
-}
-  return maximo
+  return maximo;
 }
 
 
@@ -140,7 +142,7 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if(numerosDeDia === 1 || numerosDeDia === 7){
+  if(numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana"
   }
   else {
@@ -154,7 +156,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   var numero = 0;
-  if(numero > 9){
+  if(numero >= 9){
     return false;
   } else {
     return true;
