@@ -50,8 +50,7 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-  delete objeto[propiedad];
-
+  delete objeto[unaPropiedad];
   return objeto;
 }
 
@@ -164,7 +163,7 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-   // var product = {
+   // var producto = {
   //   precio: 10,
   //   porcentajeDeDescuento: 5,
   //   calcularPrecioDescuento:
