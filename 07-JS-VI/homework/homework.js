@@ -47,7 +47,7 @@ function map(array, cb) {
   //Tu código:
   var array = [1,2,3,4,5]
   function cb (e) {console.log(e)}
-  nuevoarray = []
+  nuevoArray = []
   var nuevoArray = [];
   for(var i = 0; i < array.length; i++) {
   nuevoArray.push(cb(array[i]));
