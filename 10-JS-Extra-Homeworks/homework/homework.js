@@ -50,6 +50,7 @@ function capToFront(s) {
   }
   return mayusculas + minusculas
 }
+}
 
 
 
