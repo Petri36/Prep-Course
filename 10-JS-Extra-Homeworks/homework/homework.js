@@ -83,7 +83,7 @@ function sortArray(arr) {
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
   var arr = ['You', 'are', 'beautifull', "looking"];
-  arr.sort();
+  return arr.sort();
 }
 
 
