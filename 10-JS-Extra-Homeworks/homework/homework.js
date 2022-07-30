@@ -43,12 +43,14 @@ function capToFront(s) {
   var mayusculas = "";
   var minusculas = "";
   for(var i = 0; i < s.length; i++){
+    if(s[i] === s[i].toLowerCase()){
     minusculas = minusculas + s[i]
   }else{
-    mayuscula = mayusculas + s[i]
+    mayusculas = mayusculas + s[i]
   }
   return mayusculas + minusculas
 }
+
 
 
 function asAmirror(str) {
