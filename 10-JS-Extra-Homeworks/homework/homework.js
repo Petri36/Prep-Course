@@ -60,6 +60,11 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  var strToArray = str.split("");
+  var arrayFinal = strToArray.map(function(ele){
+    return ele.split("").reverse().join("");
+  })
+  return arrayFinal.join(" ");
 } 
 
 
@@ -68,6 +73,13 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var numString = numero.toString();
+  var resultado = numString.split("").reverse().join("");
+  if(numString === resultado){
+    return "Es capicua";
+  }else{
+    return "No es capicua";
+  }
 }
 
 
@@ -75,6 +87,15 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var difabc = "";
+  for(i = 0; i < cadena.length; i++){
+    if(cadena[i] === "a" || cadena[i] === "b" || cadena [i === "c"]){
+      continue;
+    }else{
+      difabc = difabc + cadena[i];
+    }
+  }
+  return difabc;
 }
 
 
@@ -93,8 +114,16 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  var coincidencias = [];
+  for(var i = 0; i < arreglo1.length; i++){
+    for(var j = 0; j < arreglo2.length; j++){
+      if(arreglo1[i] === arreglo2[j]){
+        coincidencias.push(arreglo1[i]);
+      }
+    }
+  }
+  return coincidencias
 }
-
 
 
 // No modificar nada debajo de esta línea
