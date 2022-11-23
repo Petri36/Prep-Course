@@ -130,27 +130,19 @@ function pasarUsuarioAPremium (usuarios) {
   return usuarios;
 }
 
-function sumarLikesDeUsuario (usuario) {
+function sumarLikesDeUsuario(usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array
   // "posts" es un array de objetos "post"
   // Cada objeto "post" tiene una propiedad llamada "likes" que es un entero (int/integer)
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  var usuario = {
-    posts: [{
-    likes: 4
-  }]
-  };
-  
-  var suma = 0;
+  var resultado = 0;
 
-  for(var i = 0; i < usuario.posts.length; i++) {
-    suma = suma + usuario.posts[i].likes;
+  for(let i = 0; i < usuario.posts.length; i++) {
+      resultado += usuario.posts[i].likes;
   }
-
-  return suma;
-
+  return resultado;
 }
 
 function agregarMetodoCalculoDescuento (producto) {
